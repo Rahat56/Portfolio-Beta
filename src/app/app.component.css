@@ -1,0 +1,23 @@
+/* Global App Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #011627 !important;
+}
+
+body {
+  font-family: "Fira Code", monospace !important;
+  background-color: #011627 !important;
+  color: #ffffff !important;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+app-root, app-header, app-hero, app-projects, app-about, app-contact, app-footer {
+  background-color: #011627 !important;
+}

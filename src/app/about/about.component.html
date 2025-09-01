@@ -1,0 +1,57 @@
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title">#skills</h2>
+    
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Language</h3>
+        <div class="skill-list">
+          <span *ngFor="let lang of skills.languages" class="skill-item">{{ lang }}</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Frameworks</h3>
+        <div class="skill-list">
+          <span *ngFor="let framework of skills.frameworks" class="skill-item">{{ framework }}</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Other</h3>
+        <div class="skill-list">
+          <span *ngFor="let other of skills.other" class="skill-item">{{ other }}</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Tools</h3>
+        <div class="skill-list">
+          <span *ngFor="let tool of skills.tools" class="skill-item">{{ tool }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Logo -->
+    <div class="js-logo">
+      <div class="js-box">
+        <span class="js-text">JS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">#about</h2>
+    <div class="about-content">
+      <p>
+        Experienced JavaScript developer specializing in creating intuitive user 
+        interfaces with modern frameworks like Angular and React. Passionate about 
+        delivering seamless user experiences. Let's collaborate and bring your next project!
+      </p>
+    </div>
+  </div>
+</section>

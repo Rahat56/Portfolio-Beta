@@ -1,0 +1,28 @@
+﻿<!-- Fixed Navigation Header -->
+<header class="fixed-header">
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo/Brand -->
+      <div class="nav-brand">
+        <a href="#home" (click)="scrollToSection('#home')">&lt; rahat /&gt;</a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-menu" [class.active]="isMobileMenuOpen">
+        <li *ngFor="let item of navItems" class="nav-item">
+          <a [href]="item.link" (click)="scrollToSection(item.link)" class="nav-link">
+            {{ item.name }}
+          </a>
+        </li>
+        <span class="email">rahat.webdev.bd&#64;gmail.com</span>
+      </ul>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="hamburger" [class.active]="isMobileMenuOpen" (click)="toggleMobileMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,39 @@
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">#projects</h2>
+      <a href="#" class="view-all">View all ⟶</a>
+    </div>
+    
+    <div class="projects-grid">
+      <div *ngFor="let project of projects" class="project-card">
+        <div class="project-image">
+          <div class="project-placeholder">
+            <div class="placeholder-content">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="project-preview"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-info">
+          <div class="project-tech">
+            <span *ngFor="let tech of project.technologies" class="tech-tag">{{ tech }}</span>
+          </div>
+          
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+          
+          <button class="project-details-btn">DETAILS &gt;&gt;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
