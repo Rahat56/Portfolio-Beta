@@ -1,0 +1,3 @@
+// This is a placeholder file for Quiz App project image
+// The actual image file should be placed at src/assets/images/projects/quiz-app.webp
+// For now, we'll use the existing portfolio.webp as fallback

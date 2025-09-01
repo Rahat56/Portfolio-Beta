@@ -39,6 +39,16 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 
 /***/ }),
 
+/***/ "./src/app/consts/media.js":
+/*!*********************************!*\
+  !*** ./src/app/consts/media.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _proxies_media__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../proxies/media */ \"./src/app/proxies/media.js\");\n\n\nconst media = {\n    discord: {\n        id: \"914240860101681163\",\n        tag: \"elias.dev.\",\n    },\n    stackOverflow: {\n        id: \"19758208\",\n        name: \"elias\",\n    },\n    github: \"EliasDevis\",\n    figma: \"elias_dev\",\n    replit: \"EliasDev\",\n    codewars: \"EliasDevis\",\n    devTo: \"eliasdevis\",\n    cssBattle: \"elias_dev\",\n    codepen: \"elias_dev\",\n    dribble: \"Elias_dev\",\n    email: \"elias.devis@protonmail.com\"\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new Proxy(media, _proxies_media__WEBPACK_IMPORTED_MODULE_0__[\"default\"]));\n\n\n\n//# sourceURL=webpack://portfolio/./src/app/consts/media.js?\n}");
+
+/***/ }),
+
 /***/ "./src/app/consts/projects.js":
 /*!************************************!*\
   !*** ./src/app/consts/projects.js ***!
@@ -56,6 +66,26 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    ts: \"TypeScript\",\n    js: \"JavaScript\",\n    python: \"Python\",\n    sqlite: \"SQLite\",\n    mongo: \"MongoDB\",\n    postgreSql: \"PostgreSQL\",\n    html: \"HTML\",\n    css: \"CSS\",\n    sass: \"SASS\",\n    scss: \"SCSS\",\n    less: \"Less\",\n    stylus: \"Stylus\",\n    ejs: \"EJS\",\n    jinja: \"Jinja2\",\n    node: \"Node.js\",\n    vscode: \"VSCode\",\n    nvim: \"NeoVim\",\n    figma: \"Figma\",\n    git: \"Git & GitHub\",\n    xfce: \"XFCE\",\n    react: \"React\",\n    discordJs: \"Discord.js\",\n    flask: \"Flask\",\n    quart: \"Quart\",\n    express: \"Express\",\n    rtk: \"RTK\",\n    zod: \"Zod\",\n    webpack: \"WebPack\",\n    pug: \"Pug\",\n    gulp: \"Gulp\",\n    next: \"Next\",\n    deno: \"Deno\",\n    pixijs: \"PixiJS\",\n    preact: \"Preact\",\n});\n\n//# sourceURL=webpack://portfolio/./src/app/consts/techs.js?\n}");
+
+/***/ }),
+
+/***/ "./src/app/consts/websites.js":
+/*!************************************!*\
+  !*** ./src/app/consts/websites.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    discord: \"discord.com/users/\",\n    github: \"github.com/\",\n    figma: \"figma.com/@\",\n    replit: \"replit.com/@\",\n    stackOverflow: \"stackoverflow.com/users/\",\n    codewars: \"codewars.com/users/\",\n    devTo: \"dev.to/\",\n    cssBattle: \"cssbattle.dev/player/\",\n    codepen: \"codepen.io/\",\n    dribble: \"dribbble.com/\",\n    email: \"mailto:\"\n});\n\n//# sourceURL=webpack://portfolio/./src/app/consts/websites.js?\n}");
+
+/***/ }),
+
+/***/ "./src/app/proxies/media.js":
+/*!**********************************!*\
+  !*** ./src/app/proxies/media.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _consts_websites__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../consts/websites */ \"./src/app/consts/websites.js\");\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    get(target, name) {\n        if (name === \"emailRaw\") \n            return target.email\n        \n        if (name === \"discord\") return `https://${_consts_websites__WEBPACK_IMPORTED_MODULE_0__[\"default\"].discord}${target.discord.id}`\n        if (name === \"discordTag\") return target.discord.tag\n\n        return `${name === \"email\" ? \"\" : \"https://\"}${_consts_websites__WEBPACK_IMPORTED_MODULE_0__[\"default\"][name] ?? \"\"}${target[name]}`\n    }\n});\n\n//# sourceURL=webpack://portfolio/./src/app/proxies/media.js?\n}");
 
 /***/ }),
 
